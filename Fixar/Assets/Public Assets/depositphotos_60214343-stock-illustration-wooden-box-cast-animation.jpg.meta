@@ -4,7 +4,13 @@ TextureImporter:
   internalIDToNameTable:
   - first:
       213: 6978922185138396633
-    second: depositphotos_60214343-stock-illustration-wooden-box-cast-animation_0
+    second: caixa3
+  - first:
+      213: -4848145483847020379
+    second: caixa2
+  - first:
+      213: -7517711896523191419
+    second: caixa1
   externalObjects: {}
   serializedVersion: 10
   mipmaps:
@@ -89,7 +95,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: depositphotos_60214343-stock-illustration-wooden-box-cast-animation_0
+      name: caixa3
       rect:
         serializedVersion: 2
         x: 55
@@ -97,7 +103,7 @@ TextureImporter:
         width: 145
         height: 141
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 3, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -105,6 +111,48 @@ TextureImporter:
       bones: []
       spriteID: 486959c609288194c9b91544a864781d
       internalID: 6978922185138396633
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: caixa2
+      rect:
+        serializedVersion: 2
+        x: 303
+        y: 785
+        width: 142
+        height: 147
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ff657ec621930c94dada890c93b13678
+      internalID: -4848145483847020379
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: caixa1
+      rect:
+        serializedVersion: 2
+        x: 548
+        y: 785
+        width: 158
+        height: 151
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: adaab5c80bd301b439cc77b1b47af425
+      internalID: -7517711896523191419
       vertices: []
       indices: 
       edges: []
