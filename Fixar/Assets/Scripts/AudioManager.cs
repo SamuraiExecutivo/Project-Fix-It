@@ -6,7 +6,7 @@ public class AudioManager : MonoBehaviour {
 
     private static AudioManager a_Manager;
     private static AudioSource a_Player;
-    [SerializeField] 
+    [SerializeField]
     AudioClip[] a_sfxList;
 
     public static void PlaySFX (int id) {

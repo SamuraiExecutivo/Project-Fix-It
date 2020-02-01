@@ -156,7 +156,7 @@ MonoBehaviour:
     - {fileID: 6978922185138396633, guid: a51847e99ec27d24e9ec3c0dc370b7a2, type: 3}
     - {fileID: 6978922185138396633, guid: a51847e99ec27d24e9ec3c0dc370b7a2, type: 3}
     - {fileID: 6978922185138396633, guid: a51847e99ec27d24e9ec3c0dc370b7a2, type: 3}
-    type: MiniDemo
+    type: GamePlay01
 --- !u!4 &1715201377
 Transform:
   m_ObjectHideFlags: 0
@@ -219,7 +219,7 @@ Camera:
     serializedVersion: 2
     x: 0
     y: 0
-    width: 0.99999994
+    width: 1
     height: 1
   near clip plane: 0.3
   far clip plane: 1000
@@ -237,7 +237,7 @@ Camera:
   m_HDR: 1
   m_AllowMSAA: 1
   m_AllowDynamicResolution: 0
-  m_ForceIntoRT: 1
+  m_ForceIntoRT: 0
   m_OcclusionCulling: 1
   m_StereoConvergence: 10
   m_StereoSeparation: 0.022
@@ -272,8 +272,8 @@ MonoBehaviour:
   m_RefResolutionY: 1080
   m_UpscaleRT: 0
   m_PixelSnapping: 0
-  m_CropFrameX: 0
-  m_CropFrameY: 0
+  m_CropFrameX: 1
+  m_CropFrameY: 1
   m_StretchFill: 1
 --- !u!1 &2144191524
 GameObject:
@@ -285,7 +285,6 @@ GameObject:
   m_Component:
   - component: {fileID: 2144191527}
   - component: {fileID: 2144191526}
-  - component: {fileID: 2144191525}
   m_Layer: 0
   m_Name: AudioManager
   m_TagString: Untagged
@@ -293,18 +292,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &2144191525
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2144191524}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f2dbff80258a31f46aaaa5b2d7caa43e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &2144191526
 MonoBehaviour:
   m_ObjectHideFlags: 0
