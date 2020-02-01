@@ -9,12 +9,14 @@ public class MiniDemo : MiniGameBase {
         for (int i = 0; i < sprites.Length; i++) {
             objects[i] = new GameObject ("object" + i);
             objects[i].AddComponent<SpriteRenderer> ().sprite = sprites[i];
-            objects[i].transform.position = new Vector3 (i / 2 * 4, -4 + i % 2 * 8);
+            objects[i].transform.position = new Vector3 (-4 + i % 2 * 8, -4 + i/2 * 8);
         }
     }
     public override void Update () {
-        foreach (GameObject go in objects) {
-            go.transform.position = Vector3.MoveTowards (go.transform.position, Vector3.zero, Time.deltaTime / 5);
+        bool flag=Input.GetKeyDown(KeyCode.Space);
+        for (int i = 0; i < objects.Length; i++) {
+            objects[i].transform.position = Vector3.MoveTowards (objects[i].transform.position, new Vector3 (-8 + i % 2 * 16, -4 + i/2 * 8), Time.deltaTime / 5);
+            if(flag)objects[i].transform.position = Vector3.MoveTowards (objects[i].transform.position, Vector3.zero, Time.deltaTime*4);
         }
         foreach (GameObject go in objects) {
             if (go.transform.position != Vector3.zero) return;

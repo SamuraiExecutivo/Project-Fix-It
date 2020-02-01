@@ -156,7 +156,7 @@ MonoBehaviour:
     - {fileID: 6978922185138396633, guid: a51847e99ec27d24e9ec3c0dc370b7a2, type: 3}
     - {fileID: 6978922185138396633, guid: a51847e99ec27d24e9ec3c0dc370b7a2, type: 3}
     - {fileID: 6978922185138396633, guid: a51847e99ec27d24e9ec3c0dc370b7a2, type: 3}
-    type: GamePlay01
+    type: MiniDemo
 --- !u!4 &1715201377
 Transform:
   m_ObjectHideFlags: 0
