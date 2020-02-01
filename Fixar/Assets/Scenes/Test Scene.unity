@@ -388,7 +388,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1045877354}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 0cd44c1031e13a943bb63640046fad76, type: 3}
   m_Name: 
@@ -906,6 +906,16 @@ MonoBehaviour:
     - {fileID: 6978922185138396633, guid: a51847e99ec27d24e9ec3c0dc370b7a2, type: 3}
     - {fileID: 6978922185138396633, guid: a51847e99ec27d24e9ec3c0dc370b7a2, type: 3}
     type: MiniDemo
+  - notes: []
+    sprites:
+    - {fileID: 6978922185138396633, guid: a51847e99ec27d24e9ec3c0dc370b7a2, type: 3}
+    - {fileID: 6978922185138396633, guid: a51847e99ec27d24e9ec3c0dc370b7a2, type: 3}
+    - {fileID: 6978922185138396633, guid: a51847e99ec27d24e9ec3c0dc370b7a2, type: 3}
+    - {fileID: 6978922185138396633, guid: a51847e99ec27d24e9ec3c0dc370b7a2, type: 3}
+    - {fileID: -7517711896523191419, guid: a51847e99ec27d24e9ec3c0dc370b7a2, type: 3}
+    - {fileID: -4848145483847020379, guid: a51847e99ec27d24e9ec3c0dc370b7a2, type: 3}
+    - {fileID: 6978922185138396633, guid: a51847e99ec27d24e9ec3c0dc370b7a2, type: 3}
+    type: Quicky
   slider: {fileID: 1482158366}
   counter: {fileID: 1661091356}
   win: {fileID: 1301083277}
