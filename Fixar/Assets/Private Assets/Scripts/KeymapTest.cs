@@ -8,28 +8,28 @@ public class KeymapTest : MonoBehaviour {
 
     void Keymap () {
         if (Input.GetKeyDown ("q")) {
-            AudioManager.PlaySFX (1);
+            AudioManager.PlaySFX (0);
         }
         if (Input.GetKeyDown ("w")) {
-            AudioManager.PlaySFX (2);
+            AudioManager.PlaySFX (1);
         }
         if (Input.GetKeyDown ("e")) {
-            AudioManager.PlaySFX (3);
+            AudioManager.PlaySFX (2);
         }
         if (Input.GetKeyDown ("r")) {
-            AudioManager.PlaySFX (4);
+            AudioManager.PlaySFX (3);
         }
         if (Input.GetKeyDown ("u")) {
-            AudioManager.PlaySFX (5);
+            AudioManager.PlaySFX (4);
         }
         if (Input.GetKeyDown ("i")) {
-            AudioManager.PlaySFX (6);
+            AudioManager.PlaySFX (5);
         }
         if (Input.GetKeyDown ("o")) {
-            AudioManager.PlaySFX (7);
+            AudioManager.PlaySFX (6);
         }
         if (Input.GetKeyDown ("p")) {
-            AudioManager.PlaySFX (8);
+            AudioManager.PlaySFX (7);
         }
     }
 
