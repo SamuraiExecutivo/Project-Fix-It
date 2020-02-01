@@ -4,7 +4,34 @@ using UnityEngine;
 
 public class KeymapTest : MonoBehaviour {
 
-    
+    AudioSource keyMusic;
+
+    void Keymap () {
+        if (Input.GetKeyDown ("q")) {
+            AudioManager.PlaySFX (1);
+        }
+        if (Input.GetKeyDown ("w")) {
+            AudioManager.PlaySFX (2);
+        }
+        if (Input.GetKeyDown ("e")) {
+            AudioManager.PlaySFX (3);
+        }
+        if (Input.GetKeyDown ("r")) {
+            AudioManager.PlaySFX (4);
+        }
+        if (Input.GetKeyDown ("u")) {
+            AudioManager.PlaySFX (5);
+        }
+        if (Input.GetKeyDown ("i")) {
+            AudioManager.PlaySFX (6);
+        }
+        if (Input.GetKeyDown ("o")) {
+            AudioManager.PlaySFX (7);
+        }
+        if (Input.GetKeyDown ("p")) {
+            AudioManager.PlaySFX (8);
+        }
+    }
 
     // Start is called before the first frame update
     void Start () {
@@ -13,6 +40,6 @@ public class KeymapTest : MonoBehaviour {
 
     // Update is called once per frame
     void Update () {
-
+        Keymap ();
     }
 }
