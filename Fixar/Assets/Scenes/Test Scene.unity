@@ -1061,13 +1061,11 @@ MonoBehaviour:
   miniGames:
   - notes: []
     sprites:
-    - {fileID: 3084180525085719906, guid: 03a59b13d4cf1f942b31b2e3c4129d4a, type: 3}
-    - {fileID: 3084180525085719906, guid: 03a59b13d4cf1f942b31b2e3c4129d4a, type: 3}
-    - {fileID: 3084180525085719906, guid: 03a59b13d4cf1f942b31b2e3c4129d4a, type: 3}
-    - {fileID: 3084180525085719906, guid: 03a59b13d4cf1f942b31b2e3c4129d4a, type: 3}
-    - {fileID: 3084180525085719906, guid: 03a59b13d4cf1f942b31b2e3c4129d4a, type: 3}
-    - {fileID: 21300000, guid: 77a8bc77bed42ac4593b4725d1ea04e9, type: 3}
-    type: GamePlay02
+    - {fileID: 21300000, guid: dcda2c2cd9c6fce4eb64617318bf7c4f, type: 3}
+    - {fileID: 21300000, guid: 873284cca4491b14a978ea693e0d4a32, type: 3}
+    - {fileID: 21300000, guid: a6856231e75b8bb4ba5b2744069df978, type: 3}
+    - {fileID: 21300000, guid: c44452c672e573645be26583ea2428ae, type: 3}
+    type: Quicky
   slider: {fileID: 1482158366}
   counter: {fileID: 1661091356}
   win: {fileID: 1301083277}

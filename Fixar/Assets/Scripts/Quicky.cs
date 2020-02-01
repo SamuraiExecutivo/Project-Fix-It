@@ -14,11 +14,12 @@ public class Quicky : MiniGameBase
         renderer=objects[1].AddComponent<SpriteRenderer>();
         renderer.sprite=sprites[1];
         prevkey=key=Random.Range(0,4);
-        objects[0].transform.rotation=Quaternion.Euler(0,0,key*-90);
+        objects[0].transform.rotation=Quaternion.Euler(0,0,key*90);
     }
     public override void Update()
     {
         if(KeyDown()){
+            AudioManager.PlaySFX (key+3);
             damage--;
             renderer.sprite=sprites[1+((10-damage)/5)];
             if(damage==0)End(State.won);
@@ -26,7 +27,7 @@ public class Quicky : MiniGameBase
                 int i=key;
                 do key=Random.Range(0,4);
                 while(key==prevkey);
-                objects[0].transform.rotation=Quaternion.Euler(0,0,key*-90);
+                objects[0].transform.rotation=Quaternion.Euler(0,0,key*90);
                 prevkey=i;
             }
         }
