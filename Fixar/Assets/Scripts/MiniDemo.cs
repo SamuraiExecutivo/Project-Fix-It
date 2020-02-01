@@ -16,11 +16,12 @@ public class MiniDemo : MiniGameBase {
         bool flag=Input.GetKeyDown(KeyCode.Space);
         for (int i = 0; i < objects.Length; i++) {
             objects[i].transform.position = Vector3.MoveTowards (objects[i].transform.position, new Vector3 (-8 + i % 2 * 16, -4 + i/2 * 8), Time.deltaTime / 5);
-            if(flag)objects[i].transform.position = Vector3.MoveTowards (objects[i].transform.position, Vector3.zero, Time.deltaTime*4);
+            if(flag)objects[i].transform.position = Vector3.MoveTowards (objects[i].transform.position, Vector3.zero, Time.deltaTime*10);
         }
+        Timer();
         foreach (GameObject go in objects) {
             if (go.transform.position != Vector3.zero) return;
         }
-        End ();
+        End(State.won);
     }
 }
