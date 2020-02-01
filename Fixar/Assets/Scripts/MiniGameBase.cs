@@ -14,12 +14,12 @@ public class MiniGameBase {
     public AudioClip[] notes;
     public Sprite[] sprites;
     public bool ended {get{return state!=State.running;}}
-    public float timer{private set;get;}=5;
+    public float timer{protected set;get;}=5;
     protected GameObject[] objects;
     public virtual void Create () { }
     public virtual void Load () { }
     public virtual void Update () { }
-    protected void Timer(){
+    protected virtual void Timer(){
         timer-=Time.deltaTime;
         if(timer<=0)End(State.lost);
     }

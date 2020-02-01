@@ -39,31 +39,31 @@ public class GamePlay01 : MiniGameBase {
     void Keymap () {
 
         if (hasFixers) {
-            if (Input.GetKeyDown ("q")) {
+            if (Input.GetKeyDown ("up")) {
                 AudioManager.PlaySFX (0);
                 objects[0].transform.localScale += new Vector3 (0.2f, 0.2f, 0.2f);
                 fixers -= 1;
             }
 
-            if (Input.GetKeyDown ("w")) {
+            if (Input.GetKeyDown ("down")) {
                 AudioManager.PlaySFX (1);
                 objects[1].transform.localScale += new Vector3 (0.2f, 0.2f, 0.2f);
                 fixers -= 1;
             }
 
-            if (Input.GetKeyDown ("e")) {
+            if (Input.GetKeyDown ("left")) {
                 AudioManager.PlaySFX (2);
                 objects[2].transform.localScale += new Vector3 (0.1f, 0.1f, 0.1f);
                 fixers -= 1;
             }
 
-            if (Input.GetKeyDown ("r")) {
+            if (Input.GetKeyDown ("right")) {
                 AudioManager.PlaySFX (3);
                 objects[3].transform.localScale += new Vector3 (0.2f, 0.2f, 0.2f);
                 fixers -= 1;
             }
         } else {
-            if (Input.GetKeyDown ("q") || Input.GetKeyDown ("w") || Input.GetKeyDown ("e") || Input.GetKeyDown ("r"))
+            if (Input.GetKeyDown ("up") || Input.GetKeyDown ("down") || Input.GetKeyDown ("left") || Input.GetKeyDown ("right"))
                 AudioManager.PlaySFX (9);
         }
 
