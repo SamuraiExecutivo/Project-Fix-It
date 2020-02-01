@@ -17,7 +17,7 @@ public class GamePlayRunner : MonoBehaviour
         chosen?.Clear();
         chosen=miniGames[Random.Range(0,miniGames.Length)].GetMiniGame();
         chosen.Create();
-        chosen.Load();
+        slider.value = slider.maxValue = chosen.timer;
         win.enabled=lose.enabled=false;
         timer=2;
     }
