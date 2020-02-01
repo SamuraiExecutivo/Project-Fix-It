@@ -5,29 +5,46 @@ using UnityEngine;
 public class GamePlay02 : MiniGameBase {
 
     bool winCondition;
-    int objectMoving = 0;
+    int objectMoving = 2;
+    float[] posInit = {-5f, -1.5f, 2f, 5.5f };
+    public GameObject selector;
+    float posY;
 
     public override void Create () {
+        selector = new GameObject ("selector");
+        selector.AddComponent<SpriteRenderer> ().sprite = sprites[5];
         objects = new GameObject[sprites.Length];
-        for (int i = 0; i < sprites.Length; i++) {
+        for (int i = 0; i < 5; i++) {
             objects[i] = new GameObject ("object" + i);
+            int ram = (int) Random.Range (0f, 3f);
             objects[i].AddComponent<SpriteRenderer> ().sprite = sprites[i];
-            int ram = (int) Random.value * 4;
-            // TODO ramdomizar posição
-            objects[i].transform.position = new Vector3 (5 * i - 15, ram * i - 9);
-            objects[i].transform.localScale = Vector3.one;
+
+            if (i == 0) objects[i].transform.position = new Vector3 (3.5f * i - 7, posInit[0]);
+            else if (i == 3) objects[i].transform.position = new Vector3 (3.5f * i - 7, posInit[2]);
+            else objects[i].transform.position = new Vector3 (3.5f * i - 7, posInit[ram]);
+
+            objects[i].transform.localScale = new Vector3 (1f, 1f);
         }
+        selector.transform.position = objects[2].transform.position;
+        selector.transform.localScale = new Vector3 (2f, 2f);
     }
 
     public override void Update () {
         Keymap ();
-
+        selector.transform.position = objects[objectMoving].transform.position + Vector3.back;
+        
         Timer ();
 
-        int posY = (int) objects[0].transform.position.y;
-        if ((objects[1].transform.position.y == posY) && (objects[2].transform.position.y == posY) && (objects[3].transform.position.y == posY)) {
+        if (state == State.lost) {
+            Object.Destroy (selector);
+        }
+
+        posY = objects[0].transform.position.y;
+        if ((objects[1].transform.position.y == posY) && (objects[2].transform.position.y == posY) &&
+            (objects[3].transform.position.y == posY) && (objects[4].transform.position.y == posY)) {
             winCondition = true;
             End (State.won);
+            Object.Destroy (selector);
         } else {
             winCondition = false;
         }
@@ -36,8 +53,8 @@ public class GamePlay02 : MiniGameBase {
 
     void Keymap () {
         if (Input.GetKeyDown ("up")) {
-            if (objects[objectMoving].transform.position.y < 15) {
-                objects[objectMoving].transform.position += Vector3.up * 5;
+            if (objects[objectMoving].transform.position.y < posInit[3]) {
+                objects[objectMoving].transform.position += Vector3.up * 3.5f;
                 AudioManager.PlaySFX (0);
             } else {
                 AudioManager.PlaySFX (9);
@@ -45,9 +62,9 @@ public class GamePlay02 : MiniGameBase {
         }
 
         if (Input.GetKeyDown ("down")) {
-            if (objects[objectMoving].transform.position.y > -5) {
+            if (objects[objectMoving].transform.position.y > posInit[0]) {
                 AudioManager.PlaySFX (1);
-                objects[objectMoving].transform.position += Vector3.down * 5;
+                objects[objectMoving].transform.position += Vector3.down * 3.5f;
             } else {
                 AudioManager.PlaySFX (9);
             }
@@ -63,10 +80,9 @@ public class GamePlay02 : MiniGameBase {
         }
 
         if (Input.GetKeyDown ("right")) {
-            AudioManager.PlaySFX (3);
-            if (objectMoving < objects.Length) {
+            if (objectMoving < objects.Length - 1) {
                 objectMoving++;
-                AudioManager.PlaySFX (2);
+                AudioManager.PlaySFX (3);
             } else {
                 AudioManager.PlaySFX (9);
             }
