@@ -1,5 +1,9 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 ﻿{"cameraMode":{"drawMode":0,"name":"Shaded","section":"Shading Mode"},"sceneLighting":true,"audioPlay":false,"sceneViewState":{"showFog":true,"showMaterialUpdate":false,"showSkybox":true,"showFlares":true,"showImageEffects":true,"showParticleSystems":true},"in2DMode":true,"pivot":{"x":9.877557754516602,"y":7.651916027069092,"z":4121.36474609375},"rotation":{"x":0.0,"y":0.0,"z":0.0,"w":1.0},"size":2.8756978511810304,"orthographic":true}
 =======
 ﻿{"cameraMode":{"drawMode":0,"name":"Shaded","section":"Shading Mode"},"sceneLighting":true,"audioPlay":false,"sceneViewState":{"showFog":true,"showMaterialUpdate":false,"showSkybox":true,"showFlares":true,"showImageEffects":true,"showParticleSystems":true},"in2DMode":true,"pivot":{"x":-0.02122151106595993,"y":1.213381290435791,"z":66.97486114501953},"rotation":{"x":0.0,"y":0.0,"z":0.0,"w":1.0},"size":17.461688995361329,"orthographic":true}
 >>>>>>> 129cadf2cd6aaf8dab36c2b9e6fdc3ee55c0feda
+=======
+﻿{"cameraMode":{"drawMode":0,"name":"Shaded","section":"Shading Mode"},"sceneLighting":true,"audioPlay":false,"sceneViewState":{"showFog":true,"showMaterialUpdate":false,"showSkybox":true,"showFlares":true,"showImageEffects":true,"showParticleSystems":true},"in2DMode":true,"pivot":{"x":-0.09289337694644928,"y":0.8254537582397461,"z":-3.04296875},"rotation":{"x":0.0,"y":0.0,"z":0.0,"w":1.0},"size":17.936389923095704,"orthographic":true}
+>>>>>>> parent of 983f713... Merge pull request #1 from SamuraiExecutivo/Yuri

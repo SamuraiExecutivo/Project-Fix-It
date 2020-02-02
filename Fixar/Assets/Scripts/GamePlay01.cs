@@ -29,10 +29,6 @@ public class GamePlay01 : MiniGameBase {
 
         Timer ();
 
-        if (objects[0].transform.localScale.x <= 0.1f && objects[1].transform.localScale.x <= 0.1f &&
-            objects[2].transform.localScale.x <= 0.1f && objects[3].transform.localScale.x <= 0.1f)
-            End (State.won);
-
     }
 
     protected override void Timer () {

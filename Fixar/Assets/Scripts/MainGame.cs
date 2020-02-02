@@ -1,7 +1,6 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.SceneManagement;
 
 public class MainGame : MiniGameBase {
 
@@ -42,10 +41,16 @@ public class MainGame : MiniGameBase {
                     break;
                 }
             }
+<<<<<<< HEAD
             if (winCondition) {
                 SceneManager.LoadScene (2);
                 End (State.won);
             } else End (State.lost);
+=======
+            if (winCondition) 
+            End (State.won);
+            else End (State.lost);
+>>>>>>> parent of 983f713... Merge pull request #1 from SamuraiExecutivo/Yuri
         }
     }
 
