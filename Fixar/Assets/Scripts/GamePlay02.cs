@@ -32,7 +32,7 @@ public class GamePlay02 : MiniGameBase {
     public override void Update () {
         Keymap ();
         selector.transform.position = objects[objectMoving].transform.position + Vector3.back;
-        
+
         Timer ();
 
         if (state == State.lost) {
@@ -80,7 +80,7 @@ public class GamePlay02 : MiniGameBase {
         }
 
         if (Input.GetKeyDown ("right")) {
-            if (objectMoving < objects.Length - 1) {
+            if (objectMoving < objects.Length - 2) {
                 objectMoving++;
                 AudioManager.PlaySFX (3);
             } else {

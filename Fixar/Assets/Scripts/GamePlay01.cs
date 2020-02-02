@@ -33,19 +33,13 @@ public class GamePlay01 : MiniGameBase {
 
     protected override void Timer () {
         timer -= Time.deltaTime;
-        if (timer <= 0) {
-            for (int i = 0; i < objects.Length; i++) {
-                if (objects[i].transform.localScale.x < 0.2f) {
-                    winCondition = true;
-                } else {
-                    winCondition = false;
-                    break;
-                }
-            }
 
-            if (winCondition) End (State.won);
-            else End (State.lost);
-        }
+        if (objects[0].transform.localScale.x <= 0.1f && objects[0].transform.localScale.x <= 0.1f &&
+            objects[0].transform.localScale.x <= 0.1f && objects[0].transform.localScale.x <= 0.1f) {
+            End (State.won);
+        } else if (timer <= 0)
+            End (State.lost);
+
     }
 
     void Keymap () {
