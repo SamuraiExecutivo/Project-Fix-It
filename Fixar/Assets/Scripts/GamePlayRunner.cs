@@ -9,13 +9,17 @@ public class GamePlayRunner : MonoBehaviour
     public Text counter;
     public Image win,lose;
     float timer;
+    int id;
     void Start()
     {
         Chose();
     }
     void Chose(){
         chosen?.Clear();
-        chosen=miniGames[Random.Range(0,miniGames.Length)].GetMiniGame();
+        int i=id;
+        do id=Random.Range(0,miniGames.Length);
+        while(id==i);
+        chosen=miniGames[id].GetMiniGame();
         chosen.Create();
         slider.value = slider.maxValue = chosen.timer;
         win.enabled=lose.enabled=false;

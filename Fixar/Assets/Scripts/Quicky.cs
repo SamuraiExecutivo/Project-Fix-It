@@ -26,7 +26,7 @@ public class Quicky : MiniGameBase
             else{
                 int i=key;
                 do key=Random.Range(0,4);
-                while(key==prevkey);
+                while(key==i);
                 objects[0].transform.rotation=Quaternion.Euler(0,0,key*90);
                 prevkey=i;
             }
