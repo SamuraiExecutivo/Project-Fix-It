@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class MainGame : MiniGameBase {
 
@@ -41,8 +42,10 @@ public class MainGame : MiniGameBase {
                     break;
                 }
             }
-            if (winCondition) 
-            End (State.won);
+            if (winCondition) {
+                End (State.won);
+                SceneManager.LoadScene(2);
+            }
             else End (State.lost);
         }
     }
