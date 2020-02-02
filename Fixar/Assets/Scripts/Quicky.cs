@@ -11,10 +11,12 @@ public class Quicky : MiniGameBase
         objects[0].AddComponent<SpriteRenderer>().sprite=sprites[0];
         
         objects[1]=new GameObject("building");
+        objects[1].transform.localScale=Vector3.one*3;
         renderer=objects[1].AddComponent<SpriteRenderer>();
         renderer.sprite=sprites[1];
         prevkey=key=Random.Range(0,4);
         objects[0].transform.rotation=Quaternion.Euler(0,0,key*90);
+        objects[0].transform.Translate(0,0,-0.1f);
     }
     public override void Update()
     {
@@ -25,8 +27,8 @@ public class Quicky : MiniGameBase
             if(damage==0)End(State.won);
             else{
                 int i=key;
-                do key=Random.Range(0,4);
-                while(key==prevkey);
+                do {key=Random.Range(0,4);}
+                while(key==i);
                 objects[0].transform.rotation=Quaternion.Euler(0,0,key*90);
                 prevkey=i;
             }
