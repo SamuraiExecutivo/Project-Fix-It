@@ -50,9 +50,10 @@ public class MainGame : MiniGameBase {
 
         Timer ();
 
-        for (int i = 0; i < 5; i++) {
-            if (jcX <= 0 && Mathf.Abs(jcY - objects[i].transform.position.y) < 2) {
-                objLife[i] += 1 * jcY * Time.deltaTime;
+        for (int i = 0; i < objLife.Length; i++) {
+            if (jcY <= 0 && Mathf.Abs(objects[i].transform.position.x - jcX) < 3) {
+                objLife[i] -= Mathf.Abs (Random.Range (2, 10) * Time.deltaTime);
+                Debug.Log ("obj " + i + ": " + objLife[i]);
             }
         }
     }
@@ -107,7 +108,7 @@ public class MainGame : MiniGameBase {
     void Keymap () {
 
         if (Input.GetKeyDown ("up")) {
-            if (hasFixers[0]) {
+            if (hasFixers[0] && objLife[0] < 25) {
                 AudioManager.PlaySFX (0);
                 fixers[0] -= 1;
                 objLife[0] += 2;
@@ -117,7 +118,7 @@ public class MainGame : MiniGameBase {
         }
 
         if (Input.GetKeyDown ("down")) {
-            if (hasFixers[1]) {
+            if (hasFixers[1] && objLife[1] < 25) {
                 AudioManager.PlaySFX (1);
                 fixers[1] -= 1;
                 objLife[1] += 2;
@@ -127,7 +128,7 @@ public class MainGame : MiniGameBase {
         }
 
         if (Input.GetKeyDown ("left")) {
-            if (hasFixers[2]) {
+            if (hasFixers[2] && objLife[2] < 25) {
                 AudioManager.PlaySFX (3);
                 fixers[2] -= 1;
                 objLife[2] += 2;
@@ -137,7 +138,7 @@ public class MainGame : MiniGameBase {
         }
 
         if (Input.GetKeyDown ("right")) {
-            if (hasFixers[3]) {
+            if (hasFixers[3] && objLife[3] < 25) {
                 AudioManager.PlaySFX (5);
                 fixers[3] -= 1;
                 objLife[3] += 2;
@@ -147,7 +148,7 @@ public class MainGame : MiniGameBase {
         }
 
         if (Input.GetKeyDown ("space")) {
-            if (hasFixers[4]) {
+            if (hasFixers[4] && objLife[4] < 25) {
                 AudioManager.PlaySFX (6);
                 fixers[4] -= 1;
                 objLife[4] += 2;

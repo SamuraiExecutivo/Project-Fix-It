@@ -1,8 +1,9 @@
 ﻿using UnityEngine;
+using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
 public class GamePlayRunner : MonoBehaviour {
-    
+
     public MiniGameInfo[] miniGames;
     public MiniGameInfo mainGame;
     MiniGameBase chosen;
@@ -10,7 +11,7 @@ public class GamePlayRunner : MonoBehaviour {
     public Text counter;
     public Image win, lose;
     float timer;
-    int id;
+    int id, winCounter;
 
     void Start () {
         chosen = mainGame.GetMiniGame ();
@@ -43,7 +44,13 @@ public class GamePlayRunner : MonoBehaviour {
             lose.enabled = chosen.state == MiniGameBase.State.lost;
             slider.gameObject.SetActive (timer <= 0);
             if (timer <= 0) {
-                Chose ();
+                if (lose.enabled) {
+                    SceneManager.LoadScene (3);
+                }
+                winCounter++;
+                if (winCounter > 10) {
+                    SceneManager.LoadScene (5);
+                } else Chose ();
             }
         }
     }
