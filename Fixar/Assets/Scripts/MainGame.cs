@@ -41,7 +41,8 @@ public class MainGame : MiniGameBase {
                     break;
                 }
             }
-            if (winCondition) End (State.won);
+            if (winCondition) 
+            End (State.won);
             else End (State.lost);
         }
     }
