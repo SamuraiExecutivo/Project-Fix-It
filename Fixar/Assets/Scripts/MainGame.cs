@@ -9,7 +9,7 @@ public class MainGame : MiniGameBase {
     bool[] hasFixers = { false, false, false, false, false };
     float[] objLife = { 20, 20, 20, 20, 20 };
     bool winCondition;
-    SpriteRenderer[] renderer;
+    SpriteRenderer renderer;
 
     public override void Create () {
         timer = 20;
@@ -20,23 +20,23 @@ public class MainGame : MiniGameBase {
         }
 
         for (int i = 0; i < sprites.Length - 3; i++) {
-            objects[i].transform.position = new Vector3 ((i % 5) * 5 - 10, -3, 50 + i * 2);
+            objects[i].transform.position = new Vector3 ((i % 5) * 5 - 10, -7, 50 + i * 2);
         }
+        objects[15] = new GameObject ("JC");
+        renderer = objects[15].AddComponent<SpriteRenderer> ();
+        renderer.sprite = sprites[15];
+        renderer.transform.position = new Vector3 (0, 0, 20);
 
-        // for (int i = 0; i <= 5; i+=3) {
-        //     renderer[i] = objects[i].AddComponent<SpriteRenderer>();
-        //     renderer[i].sprite = sprites[i];
-        //     renderer[i].transform.position = new Vector3 (i * 5 - 10, -4);
-        // }
     }
 
     public override void Update () {
         Keymap ();
         BreakingRenderer ();
+        ChristController ();
 
         for (int i = 0; i < fixers.Length; i++) {
             hasFixers[i] = fixers[i] >= 1 ? true : false;
-            fixers[i] += Random.Range (3f, 7f) * Time.deltaTime;
+            fixers[i] += Random.Range (1f, 3f) * Time.deltaTime;
         }
 
         Timer ();
@@ -60,7 +60,30 @@ public class MainGame : MiniGameBase {
     }
 
     void ChristController () {
+        renderer.sprite = sprites[(int) (3 * Time.time % 3 + 15)];
+        Vector3 left, right, speed, vspeed;
+        bool lerpDir = false;
+        bool lerdVert = false;
+        vspeed = new Vector3 (0, 1f);
+        speed = new Vector3 (3f, 0);
+        left = new Vector3 (-10, 0);
+        right = new Vector3 (10, 0);
 
+        if (objects[15].transform.position.x >= 9) lerpDir = false;
+        if (objects[15].transform.position.x <= -9) lerpDir = true;
+
+        if (objects[15].transform.position.y >= 4) lerdVert = false;
+        if (objects[15].transform.position.y <= -1) lerdVert = true;
+
+        if (lerpDir)
+            objects[15].transform.position += speed * Time.deltaTime;
+        else
+            objects[15].transform.position -= speed * Time.deltaTime;
+
+        if (lerdVert)
+            objects[15].transform.position += vspeed * Time.deltaTime;
+        else
+            objects[15].transform.position -= vspeed * Time.deltaTime;
     }
 
     void BreakingRenderer () {
@@ -132,7 +155,5 @@ public class MainGame : MiniGameBase {
                 AudioManager.PlaySFX (9);
             }
         }
-
     }
-
 }

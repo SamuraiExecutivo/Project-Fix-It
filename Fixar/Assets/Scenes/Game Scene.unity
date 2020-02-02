@@ -1193,21 +1193,6 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
-    - target: {fileID: 4905627160655042382, guid: 34a1198c02cc1844fae83f66dc650bd6,
-        type: 3}
-      propertyPath: m_Sprite
-      value: 
-      objectReference: {fileID: 10907, guid: 0000000000000000f000000000000000, type: 0}
-    - target: {fileID: 4905627160655042382, guid: 34a1198c02cc1844fae83f66dc650bd6,
-        type: 3}
-      propertyPath: m_Type
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4905627160655042382, guid: 34a1198c02cc1844fae83f66dc650bd6,
-        type: 3}
-      propertyPath: m_PixelsPerUnitMultiplier
-      value: 72
-      objectReference: {fileID: 0}
     - target: {fileID: 4905627160163285011, guid: 34a1198c02cc1844fae83f66dc650bd6,
         type: 3}
       propertyPath: m_AnchorMax.x
@@ -1217,36 +1202,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_AnchorMax.y
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4905627160163285012, guid: 34a1198c02cc1844fae83f66dc650bd6,
-        type: 3}
-      propertyPath: m_Color.r
-      value: 0.8396226
-      objectReference: {fileID: 0}
-    - target: {fileID: 4905627160163285012, guid: 34a1198c02cc1844fae83f66dc650bd6,
-        type: 3}
-      propertyPath: m_Color.g
-      value: 0.48067984
-      objectReference: {fileID: 0}
-    - target: {fileID: 4905627160163285012, guid: 34a1198c02cc1844fae83f66dc650bd6,
-        type: 3}
-      propertyPath: m_Color.b
-      value: 0.32872015
-      objectReference: {fileID: 0}
-    - target: {fileID: 4905627160163285012, guid: 34a1198c02cc1844fae83f66dc650bd6,
-        type: 3}
-      propertyPath: m_Sprite
-      value: 
-      objectReference: {fileID: 10907, guid: 0000000000000000f000000000000000, type: 0}
-    - target: {fileID: 4905627160163285012, guid: 34a1198c02cc1844fae83f66dc650bd6,
-        type: 3}
-      propertyPath: m_FillCenter
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4905627160163285012, guid: 34a1198c02cc1844fae83f66dc650bd6,
-        type: 3}
-      propertyPath: m_PixelsPerUnitMultiplier
-      value: 72
       objectReference: {fileID: 0}
     - target: {fileID: 4905627160152484543, guid: 34a1198c02cc1844fae83f66dc650bd6,
         type: 3}
