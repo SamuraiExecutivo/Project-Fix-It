@@ -14,6 +14,7 @@ public class MiniDemo : MiniGameBase {
     }
     public override void Update () {
         bool flag=Input.GetKeyDown(KeyCode.Space);
+        if (flag) AudioManager.PlaySFX (Random.Range (0,6));
         for (int i = 0; i < objects.Length; i++) {
             objects[i].transform.position = Vector3.MoveTowards (objects[i].transform.position, new Vector3 (-8 + i % 2 * 16, -4 + i/2 * 8), Time.deltaTime / 5);
             if(flag)objects[i].transform.position = Vector3.MoveTowards (objects[i].transform.position, Vector3.zero, Time.deltaTime*10);

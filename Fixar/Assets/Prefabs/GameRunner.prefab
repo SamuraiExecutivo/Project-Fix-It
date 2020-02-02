@@ -1,0 +1,80 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &824085466522856605
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 824085466522856607}
+  - component: {fileID: 824085466522856606}
+  m_Layer: 0
+  m_Name: GameRunner
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &824085466522856607
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 824085466522856605}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &824085466522856606
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 824085466522856605}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3d000054602a49c4b92aa2e363ec7415, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  miniGames:
+  - notes: []
+    sprites:
+    - {fileID: 21300000, guid: dcda2c2cd9c6fce4eb64617318bf7c4f, type: 3}
+    - {fileID: 21300000, guid: 873284cca4491b14a978ea693e0d4a32, type: 3}
+    - {fileID: 21300000, guid: a6856231e75b8bb4ba5b2744069df978, type: 3}
+    - {fileID: 21300000, guid: c44452c672e573645be26583ea2428ae, type: 3}
+    type: Quicky
+  - notes: []
+    sprites:
+    - {fileID: 21300000, guid: ff303b3c22a05354d806692a6e59e190, type: 3}
+    - {fileID: 21300000, guid: beaa1d8bff8a6a54fb7024f2cc466e53, type: 3}
+    - {fileID: 21300000, guid: 5cdef562b3f042242b244b57aaf26018, type: 3}
+    - {fileID: 21300000, guid: c44df83df8dad974a9e6bb5308adafef, type: 3}
+    type: GamePlay01
+  - notes: []
+    sprites:
+    - {fileID: 3084180525085719906, guid: 03a59b13d4cf1f942b31b2e3c4129d4a, type: 3}
+    - {fileID: 3084180525085719906, guid: 03a59b13d4cf1f942b31b2e3c4129d4a, type: 3}
+    - {fileID: 3084180525085719906, guid: 03a59b13d4cf1f942b31b2e3c4129d4a, type: 3}
+    - {fileID: 3084180525085719906, guid: 03a59b13d4cf1f942b31b2e3c4129d4a, type: 3}
+    - {fileID: 3084180525085719906, guid: 03a59b13d4cf1f942b31b2e3c4129d4a, type: 3}
+    - {fileID: 21300000, guid: 77a8bc77bed42ac4593b4725d1ea04e9, type: 3}
+    type: GamePlay02
+  - notes: []
+    sprites:
+    - {fileID: 21300000, guid: 1b0bf00df31039e46b1758ead87d34aa, type: 3}
+    - {fileID: 21300000, guid: 048c935e916697544a075a50ecd94b4d, type: 3}
+    - {fileID: 21300000, guid: 42ecf19d9b364744e972fdfb4c0c3826, type: 3}
+    - {fileID: 21300000, guid: 393f5d17e8eb45c44aa9ed15633441ca, type: 3}
+    type: MiniDemo
+  slider: {fileID: 0}
+  counter: {fileID: 0}
+  win: {fileID: 0}
+  lose: {fileID: 0}
