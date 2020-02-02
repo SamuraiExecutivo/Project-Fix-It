@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class MainGame : MiniGameBase {
 
@@ -41,10 +42,15 @@ public class MainGame : MiniGameBase {
                     break;
                 }
             }
-            if (winCondition) 
-            End (State.won);
-            else End (State.lost);
+            if (winCondition) {
+                SceneManager.LoadScene (2);
+                End (State.won);
+            } else End (State.lost);
         }
+    }
+
+    void ChristController () {
+
     }
 
     void Keymap () {
