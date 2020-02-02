@@ -362,6 +362,31 @@ PrefabInstance:
       propertyPath: m_Name
       value: Main Camera
       objectReference: {fileID: 0}
+    - target: {fileID: 6436670973153399308, guid: b44227b31efdbe94682666b633a7ded7,
+        type: 3}
+      propertyPath: orthographic size
+      value: 4.940813
+      objectReference: {fileID: 0}
+    - target: {fileID: 6436670973153399308, guid: b44227b31efdbe94682666b633a7ded7,
+        type: 3}
+      propertyPath: m_NormalizedViewPortRect.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6436670973153399308, guid: b44227b31efdbe94682666b633a7ded7,
+        type: 3}
+      propertyPath: m_NormalizedViewPortRect.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6436670973153399308, guid: b44227b31efdbe94682666b633a7ded7,
+        type: 3}
+      propertyPath: m_NormalizedViewPortRect.width
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6436670973153399308, guid: b44227b31efdbe94682666b633a7ded7,
+        type: 3}
+      propertyPath: m_NormalizedViewPortRect.height
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 6436670973153399299, guid: b44227b31efdbe94682666b633a7ded7,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -416,31 +441,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6436670973153399308, guid: b44227b31efdbe94682666b633a7ded7,
-        type: 3}
-      propertyPath: orthographic size
-      value: 4.940813
-      objectReference: {fileID: 0}
-    - target: {fileID: 6436670973153399308, guid: b44227b31efdbe94682666b633a7ded7,
-        type: 3}
-      propertyPath: m_NormalizedViewPortRect.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6436670973153399308, guid: b44227b31efdbe94682666b633a7ded7,
-        type: 3}
-      propertyPath: m_NormalizedViewPortRect.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6436670973153399308, guid: b44227b31efdbe94682666b633a7ded7,
-        type: 3}
-      propertyPath: m_NormalizedViewPortRect.width
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 6436670973153399308, guid: b44227b31efdbe94682666b633a7ded7,
-        type: 3}
-      propertyPath: m_NormalizedViewPortRect.height
-      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b44227b31efdbe94682666b633a7ded7, type: 3}
@@ -536,6 +536,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 824085466522856606, guid: 0cf9f6e05cc2cca40bee67f6bf8981db,
         type: 3}
+      propertyPath: mainGame.sprites.Array.size
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 824085466522856606, guid: 0cf9f6e05cc2cca40bee67f6bf8981db,
+        type: 3}
       propertyPath: slider
       value: 
       objectReference: {fileID: 752292166}
@@ -554,6 +559,47 @@ PrefabInstance:
       propertyPath: lose
       value: 
       objectReference: {fileID: 413637441}
+    - target: {fileID: 824085466522856606, guid: 0cf9f6e05cc2cca40bee67f6bf8981db,
+        type: 3}
+      propertyPath: mainGame.type
+      value: MainGame
+      objectReference: {fileID: 0}
+    - target: {fileID: 824085466522856606, guid: 0cf9f6e05cc2cca40bee67f6bf8981db,
+        type: 3}
+      propertyPath: mainGame.sprites.Array.data[0]
+      value: 
+      objectReference: {fileID: 21300000, guid: c44452c672e573645be26583ea2428ae,
+        type: 3}
+    - target: {fileID: 824085466522856606, guid: 0cf9f6e05cc2cca40bee67f6bf8981db,
+        type: 3}
+      propertyPath: mainGame.sprites.Array.data[1]
+      value: 
+      objectReference: {fileID: 21300000, guid: c44452c672e573645be26583ea2428ae,
+        type: 3}
+    - target: {fileID: 824085466522856606, guid: 0cf9f6e05cc2cca40bee67f6bf8981db,
+        type: 3}
+      propertyPath: mainGame.sprites.Array.data[2]
+      value: 
+      objectReference: {fileID: 21300000, guid: c44452c672e573645be26583ea2428ae,
+        type: 3}
+    - target: {fileID: 824085466522856606, guid: 0cf9f6e05cc2cca40bee67f6bf8981db,
+        type: 3}
+      propertyPath: mainGame.sprites.Array.data[3]
+      value: 
+      objectReference: {fileID: 21300000, guid: c44452c672e573645be26583ea2428ae,
+        type: 3}
+    - target: {fileID: 824085466522856606, guid: 0cf9f6e05cc2cca40bee67f6bf8981db,
+        type: 3}
+      propertyPath: mainGame.sprites.Array.data[4]
+      value: 
+      objectReference: {fileID: 21300000, guid: c44452c672e573645be26583ea2428ae,
+        type: 3}
+    - target: {fileID: 824085466522856606, guid: 0cf9f6e05cc2cca40bee67f6bf8981db,
+        type: 3}
+      propertyPath: mainGame.sprites.Array.data[5]
+      value: 
+      objectReference: {fileID: 21300000, guid: c44452c672e573645be26583ea2428ae,
+        type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0cf9f6e05cc2cca40bee67f6bf8981db, type: 3}
 --- !u!1 &1543675315
