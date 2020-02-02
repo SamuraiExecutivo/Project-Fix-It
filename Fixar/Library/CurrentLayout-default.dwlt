@@ -45,7 +45,7 @@ MonoBehaviour:
     y: 0
     width: 1920
     height: 997
-  m_MinSize: {x: 950, y: 544}
+  m_MinSize: {x: 950, y: 300}
   m_MaxSize: {x: 10000, y: 10000}
 --- !u!114 &3
 MonoBehaviour:
@@ -114,7 +114,7 @@ MonoBehaviour:
   m_MinSize: {x: 711, y: 494}
   m_MaxSize: {x: 18006, y: 14044}
   vertical: 0
-  controlID: 726
+  controlID: 2159
 --- !u!114 &6
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -139,7 +139,7 @@ MonoBehaviour:
   m_MinSize: {x: 436, y: 494}
   m_MaxSize: {x: 14006, y: 14044}
   vertical: 1
-  controlID: 628
+  controlID: 2160
 --- !u!114 &7
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -164,7 +164,7 @@ MonoBehaviour:
   m_MinSize: {x: 406, y: 222}
   m_MaxSize: {x: 8006, y: 4022}
   vertical: 0
-  controlID: 629
+  controlID: 2161
 --- !u!114 &8
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -242,7 +242,7 @@ MonoBehaviour:
   m_MinSize: {x: 436, y: 272}
   m_MaxSize: {x: 14006, y: 10022}
   vertical: 0
-  controlID: 682
+  controlID: 2208
 --- !u!114 &11
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -349,7 +349,7 @@ MonoBehaviour:
     height: 592
   m_ViewDataDictionary: {fileID: 0}
   m_VSyncEnabled: 0
-  m_MaximizeOnPlay: 1
+  m_MaximizeOnPlay: 0
   m_Gizmos: 0
   m_Stats: 0
   m_SelectedSizes: 08000000000000000000000000000000000000000000000000000000000000000000000000000000
@@ -439,9 +439,9 @@ MonoBehaviour:
   m_PlayAudio: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: 10.404764, y: 4.0892277, z: 10.848824}
+    m_Target: {x: -5.5557327, y: -12.442364, z: 39.539852}
     speed: 2
-    m_Value: {x: 10.404764, y: 4.0892277, z: 10.848824}
+    m_Value: {x: -5.5557327, y: -12.442364, z: 39.539852}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -470,13 +470,13 @@ MonoBehaviour:
       speed: 2
       m_Value: 0
   m_Rotation:
-    m_Target: {x: -0.101082824, y: 0.38395575, z: -0.04233227, w: -0.9168254}
+    m_Target: {x: -0.3262933, y: 0.34608027, z: -0.1297975, w: -0.87001395}
     speed: 2
-    m_Value: {x: 0, y: 0, z: 0, w: 1}
+    m_Value: {x: -0.3262916, y: 0.34607846, z: -0.12979682, w: -0.87000936}
   m_Size:
-    m_Target: 26.724817
+    m_Target: 74.869156
     speed: 2
-    m_Value: 26.724817
+    m_Value: 74.869156
   m_Ortho:
     m_Target: 0
     speed: 2
@@ -595,9 +595,9 @@ MonoBehaviour:
   m_SceneHierarchy:
     m_TreeViewState:
       scrollPos: {x: 0, y: 0}
-      m_SelectedIDs: 
-      m_LastClickedID: 0
-      m_ExpandedIDs: 6efaffffa0faffff7afbffff
+      m_SelectedIDs: 3a330000
+      m_LastClickedID: 13114
+      m_ExpandedIDs: 64fbffff7afbffff
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -729,7 +729,7 @@ MonoBehaviour:
     m_SelectedInstanceIDs: 
     m_LastClickedInstanceID: 0
     m_HadKeyboardFocusLastEvent: 1
-    m_ExpandedInstanceIDs: c6230000a22e0000ea7efdff9a30000044310000de2e0000206c0200521f03003cb90100382e000010b80100962d00006c520000c2290c00a6520000a02f000028310000be2f00007e310000fe31000084320000c8310000f02d00002e31000076310000b831000016320000e2310000702f00006e310000ac3100006a2d00004a2f000000000000622f0000c42d0000302e0000f22d0000983100009e2d0000702d00005e2f0000c6310000
+    m_ExpandedInstanceIDs: c6230000a22e0000ea7efdff9a30000044310000de2e0000206c0200521f03003cb90100382e000010b80100962d00006c520000c2290c00a6520000a02f000028310000be2f00007e310000fe31000084320000c8310000f02d00002e31000076310000b831000016320000e2310000702f00006e310000ac3100006a2d00004a2f000000000000622f0000302e0000f22d00005e2f0000702d000098310000c42d00009e2d0000c6310000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -753,7 +753,7 @@ MonoBehaviour:
       m_Icon: {fileID: 0}
       m_ResourceFile: 
     m_NewAssetIndexInList: -1
-    m_ScrollPosition: {x: 0, y: 1869}
+    m_ScrollPosition: {x: 0, y: 1932.5}
     m_GridSize: 96
   m_SkipHiddenPackages: 0
   m_DirectoriesAreaWidth: 198
@@ -805,7 +805,7 @@ MonoBehaviour:
   m_Script: {fileID: 13854, guid: 0000000000000000e000000000000000, type: 0}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_MinSize: {x: 300, y: 300}
+  m_MinSize: {x: 0, y: 0}
   m_MaxSize: {x: 4000, y: 4000}
   m_TitleContent:
     m_Text: Project Settings
