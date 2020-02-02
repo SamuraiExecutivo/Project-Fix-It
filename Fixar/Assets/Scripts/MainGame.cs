@@ -43,7 +43,6 @@ public class MainGame : MiniGameBase {
                 }
             }
             if (winCondition) {
-                SceneManager.LoadScene (2);
                 End (State.won);
             } else End (State.lost);
         }
