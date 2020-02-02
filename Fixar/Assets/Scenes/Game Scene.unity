@@ -574,13 +574,13 @@ PrefabInstance:
         type: 3}
       propertyPath: mainGame.sprites.Array.data[1]
       value: 
-      objectReference: {fileID: 21300000, guid: c44452c672e573645be26583ea2428ae,
+      objectReference: {fileID: 21300000, guid: 24c26a47876e7354eafe3708dbf73de7,
         type: 3}
     - target: {fileID: 824085466522856606, guid: 0cf9f6e05cc2cca40bee67f6bf8981db,
         type: 3}
       propertyPath: mainGame.sprites.Array.data[2]
       value: 
-      objectReference: {fileID: 21300000, guid: c44452c672e573645be26583ea2428ae,
+      objectReference: {fileID: 21300000, guid: 92e25cab391568847a1c7096abaf31e8,
         type: 3}
     - target: {fileID: 824085466522856606, guid: 0cf9f6e05cc2cca40bee67f6bf8981db,
         type: 3}
@@ -604,13 +604,13 @@ PrefabInstance:
         type: 3}
       propertyPath: mainGame.sprites.Array.data[6]
       value: 
-      objectReference: {fileID: 21300000, guid: a6856231e75b8bb4ba5b2744069df978,
+      objectReference: {fileID: 21300000, guid: 5f630189e089a9542bc11ea8d6f17799,
         type: 3}
     - target: {fileID: 824085466522856606, guid: 0cf9f6e05cc2cca40bee67f6bf8981db,
         type: 3}
       propertyPath: mainGame.sprites.Array.data[7]
       value: 
-      objectReference: {fileID: 21300000, guid: a6856231e75b8bb4ba5b2744069df978,
+      objectReference: {fileID: 21300000, guid: 301af60caec6a4a4198287243f4d5ed2,
         type: 3}
     - target: {fileID: 824085466522856606, guid: 0cf9f6e05cc2cca40bee67f6bf8981db,
         type: 3}
@@ -634,13 +634,13 @@ PrefabInstance:
         type: 3}
       propertyPath: mainGame.sprites.Array.data[11]
       value: 
-      objectReference: {fileID: 21300000, guid: 873284cca4491b14a978ea693e0d4a32,
+      objectReference: {fileID: 21300000, guid: 15507377971cf5a4f8ea9c22e530ca2b,
         type: 3}
     - target: {fileID: 824085466522856606, guid: 0cf9f6e05cc2cca40bee67f6bf8981db,
         type: 3}
       propertyPath: mainGame.sprites.Array.data[12]
       value: 
-      objectReference: {fileID: 21300000, guid: 873284cca4491b14a978ea693e0d4a32,
+      objectReference: {fileID: 21300000, guid: 3e7f4da142873b244ba89a57ff0769c3,
         type: 3}
     - target: {fileID: 824085466522856606, guid: 0cf9f6e05cc2cca40bee67f6bf8981db,
         type: 3}
